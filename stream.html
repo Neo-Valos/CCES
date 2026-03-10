@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Church of Eternal Salvation - Video Sermons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="streamstyle.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/50x50" alt="Church Logo" class="logo-img">
+                <h1>Christ Church <span>of Eternal Salvation</span></h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Sermons</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to Our Online Ministry</h2>
+                <p>Stream our latest sermons and worship services</p>
+                <a href="#featured-video" class="btn btn-primary">Watch Now</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section id="featured-video" class="featured-video section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Sermon</h2>
+                <p class="section-subtitle">Our most recent message</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe id="featured-video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3 id="video-title">Loading latest sermon...</h3>
+                    <p id="video-date" class="video-meta"></p>
+                    <p id="video-description" class="video-description"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="video-gallery section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Sermons</h2>
+                <p class="section-subtitle">Browse our collection of messages</p>
+            </div>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sermon">Sermons</button>
+                <button class="filter-btn" data-filter="bible-study">Bible Studies</button>
+                <button class="filter-btn" data-filter="special">Special Events</button>
+            </div>
+            <div class="gallery-grid" id="video-gallery">
+                <!-- Videos will be loaded here by JavaScript -->
+                <div class="video-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading videos...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="close-modal">&times;</button>
+            <div class="modal-video-wrapper">
+                <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="modal-video-info">
+                <h3 id="modal-video-title"></h3>
+                <p id="modal-video-date" class="video-meta"></p>
+                <p id="modal-video-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="https://via.placeholder.com/50x50" alt="Church Logo" class="logo-img">
+                        <h3>Christ Church <span>of Eternal Salvation</span></h3>
+                    </div>
+                    <p>Sharing the eternal message of salvation through Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Sermons</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Church St, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@christchurch.org</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Service Times</h4>
+                    <ul class="service-times">
+                        <li>Sunday Worship: 9:00 AM & 11:00 AM</li>
+                        <li>Wednesday Bible Study: 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Christ Church of Eternal Salvation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
