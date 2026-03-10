@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Church of Eternal Salvation - Kings Palace Parish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --primary-blue: #1a4b8c;
+            --light-blue: #4a7bc8;
+            --dark-blue: #0d2b56;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --red: #e63946;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--off-white);
+            overflow-x: hidden;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-red {
+            background-color: var(--red);
+        }
+        
+        .btn-red:hover {
+            background-color: #c1121f;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            display: inline-block;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            background-color: var(--red);
+            margin: 15px auto 0;
+        }
+        /* Header */
+        
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-image {
+            height: 60px;
+            width: 60px;
+            margin-right: 15px;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .logo-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+        
+        .logo-text span {
+            color: var(--red);
+        }
+        
+        .nav-menu {
+            display: flex;
+        }
+        
+        .nav-menu li {
+            margin-left: 30px;
+        }
+        
+        .nav-menu a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: var(--dark-blue);
+            position: relative;
+        }
+        
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--red);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary-blue);
+        }
+        
+        .nav-menu a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-blue);
+        }
+        /* Hero Section */
+        
+        .hero {
+            background: linear-gradient(rgba(26, 75, 140, 0.8), rgba(13, 43, 86, 0.8)), url('images/img_cces.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        /* About Section */
+        
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h2 {
+            color: var(--primary-blue);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Services Section */
+        
+        .services {
+            background-color: var(--off-white);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image {
+            height: 200px;
+            overflow: hidden;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-image img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-content p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+        /* Ministries Section */
+        
+        .ministries {
+            background-color: var(--white);
+        }
+        
+        .ministries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .ministry-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 8px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--off-white);
+        }
+        
+        .ministry-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(26, 75, 140, 0.7), rgba(13, 43, 86, 0.7));
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 1;
+        }
+        
+        .ministry-card:hover::before {
+            opacity: 1;
+        }
+        
+        .ministry-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .ministry-card:hover h3,
+        .ministry-card:hover p {
+            color: var(--white);
+            z-index: 2;
+            position: relative;
+        }
+        
+        .ministry-icon {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            transition: var(--transition);
+            z-index: 2;
+            position: relative;
+        }
+        
+        .ministry-card:hover .ministry-icon {
+            color: var(--white);
+        }
+        
+        .ministry-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .ministry-card p {
+            color: var(--gray);
+            transition: var(--transition);
+            z-index: 2;
+            position: relative;
+        }
+        /* Background images for ministry cards */
+        
+        .children-ministry {
+            background: url('images/children-ministry.jpg') no-repeat center center/cover;
+        }
+        
+        .small-groups {
+            background: url('images/small-groups.jpg') no-repeat center center/cover;
+        }
+        
+        .outreach {
+            background: url('images/outreach-2.jpeg') no-repeat center center/cover;
+        }
+        
+        .worship-arts {
+            background: url('images/worship-arts.jpg') no-repeat center center/cover;
+        }
+        /* Events Section */
+        
+        .events {
+            background-color: var(--off-white);
+        }
+        
+        .events-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .events-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .event-card {
+            min-width: 100%;
+            display: flex;
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .event-date {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 120px;
+        }
+        
+        .event-date .day {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        
+        .event-date .month {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+        
+        .event-content {
+            padding: 25px;
+            flex: 1;
+        }
+        
+        .event-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        
+        .event-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: var(--gray);
+        }
+        
+        .event-meta i {
+            color: var(--red);
+            margin-right: 5px;
+        }
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 10px;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .slider-dot.active {
+            background-color: var(--primary-blue);
+        }
+        /* Sermons Section */
+        
+        .sermons {
+            background-color: var(--white);
+        }
+        
+        .sermons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .sermon-card {
+            background-color: var(--off-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .sermon-video {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .sermon-video img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(230, 57, 70, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .play-btn:hover {
+            background-color: var(--red);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .sermon-content {
+            padding: 20px;
+        }
+        
+        .sermon-content h3 {
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+        
+        .sermon-meta {
+            display: flex;
+            justify-content: space-between;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        /* Giving Section */
+        
+        .giving {
+            background: linear-gradient(rgba(26, 75, 140, 0.9), rgba(13, 43, 86, 0.9)), url('https://images.unsplash.com/photo-1587334980667-9d682e0c2e73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .giving h2 {
+            color: var(--white);
+        }
+        
+        .giving p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        /* Contact Section */
+        
+        .contact {
+            background-color: var(--white);
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            background-color: var(--light-blue);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .contact-text h4 {
+            margin-bottom: 5px;
+            color: var(--dark-blue);
+        }
+        
+        .contact-form {
+            flex: 1;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 2px rgba(26, 75, 140, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        /* Form message styles */
+        
+        .form-message {
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: none;
+        }
+        
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .btn:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn:disabled:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 40px;
+            height: 2px;
+            background-color: var(--red);
+        }
+        
+        .footer-col p {
+            margin-bottom: 20px;
+            color: #b3c1d1;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: #b3c1d1;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--red);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b3c1d1;
+            font-size: 0.9rem;
+        }
+        /* Animations */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Responsive Styles */
+        
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            .contact-container {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: var(--transition);
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .nav-menu li {
+                margin: 0;
+                padding: 15px 0;
+                border-bottom: 1px solid var(--light-gray);
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+            .section {
+                padding: 60px 0;
+            }
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            .event-card {
+                flex-direction: column;
+            }
+            .event-date {
+                flex-direction: row;
+                justify-content: center;
+                gap: 10px;
+                padding: 15px;
+            }
+            .event-date .day,
+            .event-date .month {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="images/cces_logo.jpg" alt="Church Logo" onerror="this.style.display='none'">
+                </div>
+                <div class="logo-text">Christ Church <span>of Eternal Salvation</span></div>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ministries">Ministries</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#sermons">Sermons</a></li>
+                <li><a href="#giving">Giving</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Christ Church of Eternal Salvation<br>Kings Palace Parish</h1>
+                <p>A community of faith, hope, and love where everyone is welcome. Join us as we grow in Christ together.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn">Worship with Us</a>
+                    <a href="#contact" class="btn btn-red">Visit Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <h2>Our Church Story</h2>
+                    <p>Christ Church of Eternal Salvation was founded in 1985 with a mission to spread the gospel of Jesus Christ and serve our community. What started as a small Bible study group has grown into a vibrant congregation of believers dedicated
+                        to worship, fellowship, and service.</p>
+                    <p>We believe in the power of God's Word to transform lives and are committed to creating a welcoming environment where people from all walks of life can encounter God and grow in their faith.</p>
+                    <a href="#about" class="btn">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/iiubiu.jpg" alt="Church Story" onerror="this.src='https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/464732399_18356698088189396_8529310378212445244_n.jpg" alt="Sunday Worship" onerror="this.src='https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'">
+                    </div>
+                    <div class="service-content">
+                        <h3>Sunday Worship</h3>
+                        <p>Join us every Sunday for our main worship service featuring inspiring music, prayer, and biblical teaching.</p>
+                        <p><strong>Time:</strong> 9:00 AM</p>
+                        <a href="#services" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/bible-study.jpg" alt="Bible Study" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80'">
+                    </div>
+                    <div class="service-content">
+                        <h3>Midweek Bible Study</h3>
+                        <p>Deepen your understanding of Scripture in our Wednesday evening Bible study and fellowship.</p>
+                        <p><strong>Time:</strong> 5:30 PM</p>
+                        <a href="#services" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/crossing-the-jabbok.jpg" alt="Crossing the Jabbok">
+                    </div>
+                    <div class="service-content">
+                        <h3>Crossing the Jabbok</h3>
+                        <p>A transformative service focused on spiritual growth and overcoming life's challenges through faith.</p>
+                        <p><strong>Time:</strong> Sunday 5:30 PM</p>
+                        <a href="#services" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="images/victory-hour.jpg" alt="Victory Hour" onerror="this.src='https://images.unsplash.com/photo-1572550997837-c2f2f1b0e7f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'">
+                    </div>
+                    <div class="service-content">
+                        <h3>Victory Hour</h3>
+                        <p>Experience the power of prayer and worship in our special victory-focused service.</p>
+                        <p><strong>Time:</strong> Friday 5:30 PM</p>
+                        <a href="#services" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries Section -->
+    <section class="section ministries" id="ministries">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Ministries</h2>
+            </div>
+            <div class="ministries-grid">
+                <div class="ministry-card children-ministry fade-in">
+                    <div class="ministry-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Children's Ministry</h3>
+                    <p>Engaging programs for children to learn about God in a fun, safe environment.</p>
+                </div>
+                <div class="ministry-card small-groups fade-in">
+                    <div class="ministry-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Evangelism</h3>
+                    <p>Connect with others in small group settings for fellowship and spiritual growth.</p>
+                </div>
+                <div class="ministry-card outreach fade-in">
+                    <div class="ministry-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Outreach</h3>
+                    <p>Serving our community through various outreach programs and missions.</p>
+                </div>
+                <div class="ministry-card worship-arts fade-in">
+                    <div class="ministry-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Worship and praise</h3>
+                    <p>Using creative arts to glorify God and lead the congregation in worship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section events" id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upcoming Events</h2>
+            </div>
+            <div class="events-slider">
+                <div class="events-container" id="eventsContainer">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <div class="day">15</div>
+                            <div class="month">JUN</div>
+                        </div>
+                        <div class="event-content">
+                            <h3>Summer Picnic & Fellowship</h3>
+                            <div class="event-meta">
+                                <div><i class="fas fa-clock"></i> 12:00 PM - 4:00 PM</div>
+                                <div><i class="fas fa-map-marker-alt"></i> Community Park</div>
+                            </div>
+                            <p>Join us for a fun-filled afternoon of food, games, and fellowship at the community park. All are welcome!</p>
+                            <a href="#events" class="btn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sermons Section -->
+    <section class="section sermons" id="sermons">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recent Sermons</h2>
+            </div>
+            <div class="sermons-grid">
+                <div class="sermon-card fade-in">
+                    <div class="sermon-video">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sermon thumbnail">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-content">
+                        <h3>The Power of Faith</h3>
+                        <div class="sermon-meta">
+                            <span>Pastor John Smith</span>
+                            <span>June 4, 2023</span>
+                        </div>
+                        <p>Exploring how faith can move mountains in our daily lives and strengthen our relationship with God.</p>
+                        <a href="#sermons" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                <div class="sermon-card fade-in">
+                    <div class="sermon-video">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Sermon thumbnail">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-content">
+                        <h3>Living in Grace</h3>
+                        <div class="sermon-meta">
+                            <span>Pastor Sarah Johnson</span>
+                            <span>May 28, 2023</span>
+                        </div>
+                        <p>Understanding God's unconditional grace and how to extend that grace to others in our lives.</p>
+                        <a href="#sermons" class="btn">Watch Now</a>
+                    </div>
+                </div>
+                <div class="sermon-card fade-in">
+                    <div class="sermon-video">
+                        <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Sermon thumbnail">
+                        <div class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="sermon-content">
+                        <h3>Hope in Hard Times</h3>
+                        <div class="sermon-meta">
+                            <span>Pastor Michael Brown</span>
+                            <span>May 21, 2023</span>
+                        </div>
+                        <p>Finding hope and strength in God during difficult seasons of life.</p>
+                        <a href="#sermons" class="btn">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giving Section -->
+    <section class="section giving" id="giving">
+        <div class="container">
+            <div class="section-title">
+                <h2>Generous Giving</h2>
+            </div>
+            <p>Your generous gifts enable us to continue our ministry and outreach efforts in the community. We believe that giving is an act of worship and a way to participate in God's work.</p>
+            <a href="giving.html" class="btn btn-red">Give Online</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>We'd love to hear from you. Reach out to us with any questions or prayer requests.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Our Location</h4>
+                                <p>KING PALACE ARENA </br> BEKANDIMS HOTEL, </br>UNILORIN PERMANAENT SITE ROAD, OKE-ODO, ILORIN
+                                </p>
+                                </br>
+                                <p>IBUDO OSO G.R.A</br>
+                                    NEAR JUDGES QUATERS</br>ILORIN
+                                </p>
+                                </br>
+                                <P>SASKATOON CANADA</P>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone Number</h4>
+                                <p>+234 807 444 4441</br>
+                                    +234 809 060 9898</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Address</h4>
+                                <p>info@wwwcceskingspalaceorg.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Service Times</h4>
+                                <p>Sunday: 9:00 AM<br>Wednesday: 5:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div id="formMessage" class="form-message"></div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" id="submitBtn">
+                            <span id="btnText">Send Message</span>
+                            <div id="btnSpinner" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Christ Church</h3>
+                    <p>A community of believers dedicated to worship, fellowship, and service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#ministries">Ministries</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#sermons">Sermons</a></li>
+                        <li><a href="#giving">Giving</a></li>
+                        <li><a href="#">Prayer Requests</a></li>
+                        <li><a href="#">Bible Studies</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Bekandims hotel,university permanent site road, okeodo,Ilorin</li>
+                        <li><i class="fas fa-phone"></i> +234 809 060 9898, +234 807 444 4441</li>
+                        <li><i class="fas fa-envelope"></i> info@wwwcceskingspalaceorg.org</li>
+                        <li><i class="fas fa-clock"></i> Sunday: 9 :00 AM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Christ Church of Eternal Salvation - Kings Palace Parish. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Scroll animations
+        const fadeElements = document.querySelectorAll('.fade-in');
+
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+
+        // Check on load and scroll
+        window.addEventListener('load', fadeInOnScroll);
+        window.addEventListener('scroll', fadeInOnScroll);
+
+        // ----- EVENTS SLIDER WITH LOCALSTORAGE SYNC -----
+        const eventsContainer = document.getElementById('eventsContainer');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        let events = [];
+        let slideInterval;
+
+        // Load events from localStorage, or use defaults
+        function loadEventsFromStorage() {
+            const stored = localStorage.getItem('churchEvents');
+            if (stored) {
+                try {
+                    events = JSON.parse(stored);
+                } catch (e) {
+                    events = [];
+                }
+            }
+            // If no events, set defaults and save them
+            if (!events || events.length === 0) {
+                events = [
+                    {
+                        day: '15',
+                        month: 'JUN',
+                        title: 'Summer Picnic & Fellowship',
+                        time: '12:00 PM - 4:00 PM',
+                        location: 'Community Park',
+                        description: 'Join us for a fun-filled afternoon of food, games, and fellowship at the community park. All are welcome!'
+                    },
+                    {
+                        day: '22',
+                        month: 'JUN',
+                        title: 'Baptism Service',
+                        time: '2:00 PM',
+                        location: 'Church Sanctuary',
+                        description: 'Celebrate with us as individuals publicly declare their faith in Jesus Christ through baptism.'
+                    },
+                    {
+                        day: '29',
+                        month: 'JUN',
+                        title: 'Youth Mission Trip',
+                        time: 'All Day',
+                        location: 'Mission Location',
+                        description: 'Our youth group will be serving on a mission trip. Please keep them in your prayers.'
+                    }
+                ];
+                localStorage.setItem('churchEvents', JSON.stringify(events));
+            }
+        }
+
+        // Function to create event card HTML
+        function createEventCard(event) {
+            return `
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">${event.day}</div>
+                        <div class="month">${event.month}</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>${event.title}</h3>
+                        <div class="event-meta">
+                            <div><i class="fas fa-clock"></i> ${event.time}</div>
+                            <div><i class="fas fa-map-marker-alt"></i> ${event.location}</div>
+                        </div>
+                        <p>${event.description}</p>
+                        <a href="#events" class="btn">More Info</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize events slider
+        function initEventsSlider() {
+            // Clear existing content
+            eventsContainer.innerHTML = '';
+
+            // Add all events to the container
+            events.forEach(event => {
+                eventsContainer.innerHTML += createEventCard(event);
+            });
+
+            // Reset slider position
+            currentSlide = 0;
+            eventsContainer.style.transform = 'translateX(0)';
+            
+            // Update dots
+            updateSliderDots(0);
+            
+            // Restart auto-slide
+            if (slideInterval) clearInterval(slideInterval);
+            slideInterval = setInterval(() => {
+                if (events.length === 0) return;
+                currentSlide = (currentSlide + 1) % events.length;
+                eventsContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+                updateSliderDots(currentSlide);
+            }, 5000);
+        }
+
+        // Update active dot
+        function updateSliderDots(index) {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Event listeners for dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                if (events.length === 0) return;
+                currentSlide = index;
+                eventsContainer.style.transform = `translateX(-${index * 100}%)`;
+                updateSliderDots(index);
+            });
+        });
+
+        // Load events and start slider
+        loadEventsFromStorage();
+        initEventsSlider();
+
+        // Listen for changes in localStorage (from admin panel)
+        window.addEventListener('storage', function(e) {
+            if (e.key === 'churchEvents') {
+                // Reload the page to show updated events
+                location.reload();
+            }
+        });
+
+        // ----- CONTACT FORM (unchanged) -----
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnSpinner = document.getElementById('btnSpinner');
+
+        contactForm.addEventListener('submit', async(e) => {
+            e.preventDefault();
+
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnSpinner.style.display = 'block';
+            formMessage.style.display = 'none';
+
+            const formData = new FormData(contactForm);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message')
+            };
+
+            try {
+                const mailtoLink = `mailto:info@wwwcceskingspalaceorg.org?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`;
+                
+                showFormMessage('Thank you for your message! Your email client will open to send the message to info@wwwcceskingspalaceorg.org.', 'success');
+                
+                setTimeout(() => {
+                    window.location.href = mailtoLink;
+                }, 1000);
+                
+                contactForm.reset();
+                
+            } catch (error) {
+                showFormMessage('Error preparing your message. Please try again.', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                btnText.style.display = 'block';
+                btnSpinner.style.display = 'none';
+            }
+        });
+
+        function showFormMessage(message, type) {
+            formMessage.textContent = message;
+            formMessage.className = `form-message ${type}`;
+            formMessage.style.display = 'block';
+            formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
